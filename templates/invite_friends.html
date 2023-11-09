@@ -1,0 +1,18 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Invite Friends</title>
+</head>
+<body>
+<h1>Invite Friends</h1>
+<form action="/invite_friends/{{ party.id }}" method="post">
+<label for="friends">Friends:</label><br>
+<input type="text" id="friends" name="friends" value="{{ party.friends }}"><br><br>
+<input type="submit" value="Invite Friends">
+</form>
+</body>
+</html>
+
+
