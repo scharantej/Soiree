@@ -1,0 +1,19 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Party Planner</title>
+</head>
+<body>
+<h1>Upcoming Parties</h1>
+<ul>
+{% for party in parties %}
+<li>{{ party.name }} - {{ party.date }} - {{ party.time }} - {{ party.location }}</li>
+{% endfor %}
+</ul>
+<a href="/create_party">Create a new party</a>
+</body>
+</html>
+
+
