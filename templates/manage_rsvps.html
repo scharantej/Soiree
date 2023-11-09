@@ -1,0 +1,17 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Manage RSVPs</title>
+</head>
+<body>
+<h1>Manage RSVPs</h1>
+<form action="/manage_rsvps/{{ party.id }}" method="post">
+<label for="rsvps">RSVPs:</label><br>
+<input type="text" id="rsvps" name="rsvps" value="{{ party.rsvps }}"><br><br>
+<input type="submit" value="Save Changes">
+</form>
+</body>
+</html>
+
